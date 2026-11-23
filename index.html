@@ -3,347 +3,134 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>شب‌های مسکو | MOSCOW NIGHTS</title>
-
-<meta name="description" content="وب‌سایت معرفی مجموعه شب‌های مسکو در صومعه‌سرا، استان گیلان.">
-<meta name="theme-color" content="#09090d">
+<meta name="description" content="MOSCOW NIGHTS - شب‌های مسکو | معرفی مجموعه در صومعه‌سرا">
+<title>MOSCOW NIGHTS | شب‌های مسکو</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:Tahoma,Arial,sans-serif;
+ background:#09090d;
+ color:#f5f5f5;
+ line-height:1.9;
 }
-
-html {
-    scroll-behavior: smooth;
+header{
+ background:#111119;
+ padding:15px;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ gap:15px;
+ border-bottom:1px solid #a77aff;
 }
-
-body {
-    font-family: Tahoma, Arial, sans-serif;
-    background: #09090d;
-    color: #f4f4f7;
-    line-height: 2;
+header img{width:65px;height:65px;object-fit:contain}
+header h1{font-size:22px;color:#d6b5ff;margin:0}
+header p{margin:0;color:#aaa;font-size:12px}
+nav{
+ display:flex;
+ justify-content:center;
+ flex-wrap:wrap;
+ gap:10px;
+ padding:12px;
+ background:#17131f;
+ position:sticky;
+ top:0;
+ z-index:10;
 }
-
-a {
-    color: inherit;
-    text-decoration: none;
+nav a{
+ color:white;
+ text-decoration:none;
+ padding:7px 13px;
+ border-radius:20px;
+ background:#30213f;
+ font-size:13px;
 }
-
-.container {
-    width: 92%;
-    max-width: 1150px;
-    margin: auto;
+nav a:hover{background:#7543a8}
+.hero{
+ text-align:center;
+ padding:35px 15px;
+ background:linear-gradient(145deg,#171020,#09090d);
 }
-
-/* HEADER */
-
-header {
-    background: #0c0a11;
-    border-bottom: 1px solid #30213e;
-    padding: 12px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+.hero img{
+ width:180px;
+ height:180px;
+ object-fit:contain;
 }
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
+.hero h2{color:#d6b5ff;font-size:25px}
+.hero p{color:#bbb}
+.container{max-width:1050px;margin:auto;padding:25px 15px}
+.section-title{
+ text-align:center;
+ color:#d6b5ff;
+ font-size:22px;
+ margin-bottom:20px;
 }
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 14px;
+.main-image{
+ width:100%;
+ max-width:900px;
+ display:block;
+ margin:20px auto;
+ border-radius:15px;
+ border:1px solid #69438b;
 }
-
-.brand img {
-    width: 75px;
-    height: 75px;
-    object-fit: contain;
+.cards{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+ gap:15px;
 }
-
-.brand h1 {
-    font-size: 19px;
-    color: #d0adff;
-    direction: ltr;
+.card{
+ background:#17131f;
+ border:1px solid #49335e;
+ border-radius:14px;
+ padding:20px;
+ text-align:center;
 }
-
-nav {
-    display: flex;
-    gap: 24px;
-    font-size: 14px;
+.card h3{color:#d6b5ff}
+.card a{
+ display:inline-block;
+ color:white;
+ background:#67418b;
+ padding:8px 18px;
+ border-radius:20px;
+ text-decoration:none;
 }
-
-nav a {
-    transition: 0.3s;
+.gallery{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+ gap:12px;
 }
-
-nav a:hover {
-    color: #bd8cff;
+.gallery img{
+ width:100%;
+ height:180px;
+ object-fit:cover;
+ border-radius:12px;
+ border:1px solid #69438b;
 }
-
-/* HERO */
-
-.hero {
-    text-align: center;
-    padding: 85px 15px 75px;
-    background:
-    radial-gradient(circle at center,
-    #28163d 0%,
-    #100d17 55%,
-    #09090d 85%);
+.info{
+ background:#17131f;
+ border-right:4px solid #a77aff;
+ padding:18px;
+ border-radius:10px;
 }
-
-.hero-logo {
-    width: 210px;
-    height: 210px;
-    object-fit: contain;
-    margin-bottom: 25px;
-    filter: drop-shadow(0 0 22px rgba(169,105,255,0.25));
+.contact{text-align:center}
+.contact a{
+ display:inline-block;
+ margin:7px;
+ padding:10px 18px;
+ border-radius:25px;
+ background:#67418b;
+ color:white;
+ text-decoration:none;
 }
-
-.hero h2 {
-    font-size: 40px;
-    color: #d7bdff;
-}
-
-.english-title {
-    direction: ltr;
-    font-size: 21px;
-    letter-spacing: 5px;
-    color: #c2bdca;
-}
-
-.hero-line {
-    width: 85px;
-    height: 3px;
-    background: #a75cff;
-    margin: 28px auto;
-    border-radius: 10px;
-}
-
-.hero p {
-    max-width: 700px;
-    margin: auto;
-    color: #d0cbd8;
-    font-size: 16px;
-}
-
-/* SECTIONS */
-
-section {
-    padding: 65px 0;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 27px;
-    color: #d2b1ff;
-    margin-bottom: 35px;
-}
-
-.section-title::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 2px;
-    background: #a75cff;
-    margin: 13px auto;
-}
-
-/* ABOUT */
-
-.about-box {
-    background: #14111b;
-    border: 1px solid #33243f;
-    border-radius: 18px;
-    padding: 35px;
-    text-align: center;
-    color: #d0cbd8;
-    font-size: 15px;
-}
-
-/* MAIN IMAGE */
-
-.gallery {
-    background: #0e0b13;
-}
-
-.gallery-image {
-    display: block;
-    width: 100%;
-    max-width: 1100px;
-    height: auto;
-    margin: auto;
-    border-radius: 20px;
-    border: 1px solid #45305b;
-    box-shadow: 0 0 30px rgba(143,76,209,0.2);
-}
-
-/* CONTACT */
-
-.contact {
-    background: #100d16;
-}
-
-.contact-box {
-    max-width: 750px;
-    margin: auto;
-    background: #171320;
-    border: 1px solid #443052;
-    border-radius: 18px;
-    padding: 35px;
-}
-
-.contact-row {
-    padding: 14px 5px;
-    border-bottom: 1px solid #30263a;
-    color: #d2cbdc;
-    font-size: 15px;
-}
-
-.contact-row:last-of-type {
-    border-bottom: none;
-}
-
-.contact-row strong {
-    color: #c9a5ff;
-}
-
-.instagram {
-    display: inline-block;
-    margin-top: 28px;
-    padding: 12px 30px;
-    background: #8d42d1;
-    color: white;
-    border-radius: 9px;
-    transition: 0.3s;
-    font-size: 14px;
-}
-
-.instagram:hover {
-    background: #a75cff;
-}
-
-/* HEALTH NOTICE */
-
-.health-notice {
-    background: #171019;
-    border-right: 4px solid #a75cff;
-    border-radius: 10px;
-    padding: 25px;
-    color: #d0c8d8;
-    font-size: 13px;
-}
-
-.health-notice h3 {
-    color: #d6b7ff;
-    margin-bottom: 10px;
-    font-size: 17px;
-}
-
-/* FOOTER */
-
-footer {
-    background: #07070a;
-    border-top: 1px solid #30223e;
-    text-align: center;
-    padding: 28px 10px;
-    color: #88818f;
-    font-size: 13px;
-}
-
-footer span {
-    color: #bd91ff;
-}
-
-/* TABLET */
-
-@media (max-width: 800px) {
-
-    .container {
-        width: 94%;
-    }
-
-    .gallery-image {
-        max-width: 100%;
-    }
-
-    nav {
-        gap: 15px;
-    }
-}
-
-/* MOBILE */
-
-@media (max-width: 650px) {
-
-    .header-content {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .brand img {
-        width: 65px;
-        height: 65px;
-    }
-
-    .brand h1 {
-        font-size: 17px;
-    }
-
-    nav {
-        width: 100%;
-        justify-content: center;
-        gap: 20px;
-        font-size: 12px;
-        padding: 5px 0;
-    }
-
-    .hero {
-        padding: 60px 15px;
-    }
-
-    .hero-logo {
-        width: 185px;
-        height: 185px;
-    }
-
-    .hero h2 {
-        font-size: 32px;
-    }
-
-    .english-title {
-        font-size: 16px;
-        letter-spacing: 4px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-
-    section {
-        padding: 45px 0;
-    }
-
-    .section-title {
-        font-size: 23px;
-    }
-
-    .about-box,
-    .contact-box {
-        padding: 22px;
-    }
-
-    .gallery-image {
-        border-radius: 12px;
-    }
+footer{
+ text-align:center;
+ padding:20px;
+ color:#999;
+ background:#111119;
+ margin-top:30px;
+ font-size:12px;
 }
 </style>
 </head>
@@ -351,190 +138,108 @@ footer span {
 <body>
 
 <header>
-    <div class="container header-content">
-
-        <div class="brand">
-            <img
-                src="file_00000000affc8210b919614509fa3f14.png"
-                alt="لوگوی شب‌های مسکو">
-
-            <h1>MOSCOW NIGHTS</h1>
-        </div>
-
-        <nav>
-            <a href="#home">خانه</a>
-            <a href="#about">درباره ما</a>
-            <a href="#gallery">تصویر مجموعه</a>
-            <a href="#contact">ارتباط</a>
-        </nav>
-
-    </div>
+ <img src="file_00000000affc8210b919614509fa3f14.png" alt="لوگوی مجموعه">
+ <div>
+  <h1>MOSCOW NIGHTS</h1>
+  <p>شب‌های مسکو | صومعه‌سرا، گیلان</p>
+ </div>
 </header>
 
-<main>
-
-<!-- HOME -->
+<nav>
+ <a href="#home">خانه</a>
+ <a href="#about">درباره مجموعه</a>
+ <a href="#gallery">گالری</a>
+ <a href="#health">اطلاعیه سلامت</a>
+ <a href="#contact">تماس با ما</a>
+</nav>
 
 <section class="hero" id="home">
-
-    <div class="container">
-
-        <img
-            class="hero-logo"
-            src="file_00000000affc8210b919614509fa3f14.png"
-            alt="نشان شب‌های مسکو">
-
-        <h2>شب‌های مسکو</h2>
-
-        <div class="english-title">
-            MOSCOW NIGHTS
-        </div>
-
-        <div class="hero-line"></div>
-
-        <p>
-            فضایی با هویتی متفاوت و نگاهی مدرن،
-            در صومعه‌سرای گیلان.
-        </p>
-
-    </div>
-
+ <img src="file_00000000affc8210b919614509fa3f14.png" alt="MOSCOW NIGHTS">
+ <h2>به MOSCOW NIGHTS خوش آمدید</h2>
+ <p>معرفی مجموعه و راه‌های ارتباط با ما</p>
 </section>
 
-<!-- ABOUT -->
-
-<section id="about">
-
-    <div class="container">
-
-        <h2 class="section-title">درباره ما</h2>
-
-        <div class="about-box">
-
-            <p>
-                شب‌های مسکو نام مجموعه‌ای با هویتی مستقل
-                و رویکردی مدرن است.
-            </p>
-
-            <p>
-                این مجموعه در صومعه‌سرای استان گیلان قرار دارد
-                و این وب‌سایت برای معرفی مجموعه و ارائه
-                اطلاعات عمومی و ارتباطی آن ایجاد شده است.
-            </p>
-
-        </div>
-
-    </div>
-
+<section class="container" id="about">
+ <h2 class="section-title">درباره مجموعه</h2>
+ <div class="info">
+  <p>
+   MOSCOW NIGHTS مجموعه‌ای در صومعه‌سرا، استان گیلان است.
+   در این وب‌سایت می‌توانید با مجموعه، تصاویر و اطلاعات عمومی
+   مرتبط آشنا شوید و از راه‌های ارتباطی با ما استفاده کنید.
+  </p>
+ </div>
+ <img class="main-image"
+ src="file_00000000525c8210acbedb1dcaef1ce5.png"
+ alt="تصویر مجموعه">
 </section>
 
-<!-- GALLERY -->
+<section class="container">
+ <h2 class="section-title">بخش‌های مجموعه</h2>
+ <div class="cards">
+  <div class="card">
+   <h3>معرفی مجموعه</h3>
+   <p>آشنایی با MOSCOW NIGHTS</p>
+   <a href="#about">ورود به بخش</a>
+  </div>
 
-<section class="gallery" id="gallery">
+  <div class="card">
+   <h3>گالری تصاویر</h3>
+   <p>مشاهده تصاویر و محتوای تصویری</p>
+   <a href="#gallery">مشاهده گالری</a>
+  </div>
 
-    <div class="container">
+  <div class="card">
+   <h3>اطلاعیه سلامت</h3>
+   <p>اطلاعات عمومی و هشدارهای سلامت</p>
+   <a href="#health">مطالعه مطالب</a>
+  </div>
 
-        <h2 class="section-title">تصویر مجموعه</h2>
-
-        <img
-            class="gallery-image"
-            src="file_00000000525c8210acbedb1dcaef1ce5.png"
-            alt="تصویر مجموعه شب‌های مسکو">
-
-    </div>
-
+  <div class="card">
+   <h3>ارتباط با ما</h3>
+   <p>راه‌های تماس با مجموعه</p>
+   <a href="#contact">اطلاعات تماس</a>
+  </div>
+ </div>
 </section>
 
-<!-- CONTACT -->
-
-<section class="contact" id="contact">
-
-    <div class="container">
-
-        <h2 class="section-title">ارتباط با ما</h2>
-
-        <div class="contact-box">
-
-            <div class="contact-row">
-                <strong>موقعیت:</strong>
-                گیلان، صومعه‌سرا
-            </div>
-
-            <div class="contact-row">
-                <strong>ساعات پاسخ‌گویی:</strong>
-                ۱۰ صبح تا ۲۰
-            </div>
-
-            <div class="contact-row">
-                <strong>مبصری:</strong>
-                09354722236
-            </div>
-
-            <div class="contact-row">
-                <strong>طوفانی:</strong>
-                09119833800
-            </div>
-
-            <div style="text-align:center;">
-
-                <a
-                    class="instagram"
-                    href="https://www.instagram.com/moscownights.gilan/"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    صفحه اینستاگرام مجموعه
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
+<section class="container" id="gallery">
+ <h2 class="section-title">گالری تصاویر</h2>
+ <div class="gallery">
+  <img src="file_00000000525c8210acbedb1dcaef1ce5.png" alt="تصویر مجموعه">
+  <img src="file_00000000affc8210b919614509fa3f14.png" alt="نشان مجموعه">
+ </div>
+ <p style="text-align:center;color:#aaa;font-size:13px">
+  تصاویر بیشتر در نسخه‌های بعدی به گالری اضافه می‌شوند.
+ </p>
 </section>
 
-<!-- HEALTH INFORMATION -->
-
-<section>
-
-    <div class="container">
-
-        <div class="health-notice">
-
-            <h3>اطلاعیه سلامت</h3>
-
-            <p>
-                محصولات حاوی نیکوتین اعتیادآور هستند و
-                مصرف آن‌ها می‌تواند برای سلامت زیان‌آور باشد.
-                افراد غیرمصرف‌کننده و افراد زیر سن قانونی
-                نباید از این محصولات استفاده کنند.
-            </p>
-
-        </div>
-
-    </div>
-
+<section class="container" id="health">
+ <h2 class="section-title">اطلاعیه سلامت</h2>
+ <div class="info">
+  <p>
+   استفاده از محصولات حاوی نیکوتین و فرآورده‌های دخانی
+   با خطرات سلامت همراه است. نیکوتین ماده‌ای اعتیادآور است.
+   هیچ‌یک از این محصولات بدون خطر محسوب نمی‌شوند.
+  </p>
+ </div>
 </section>
 
-</main>
+<section class="container contact" id="contact">
+ <h2 class="section-title">ارتباط با ما</h2>
+ <p>صومعه‌سرا، استان گیلان</p>
+ <p>ساعت پاسخ‌گویی: ۱۰ صبح تا ۲۰</p>
 
-<!-- FOOTER -->
+ <a href="tel:09354722236">تماس با مبصری</a>
+ <a href="tel:09119833800">تماس با طوفانی</a>
+ <a href="https://www.instagram.com/moscownights.gilan/"
+ target="_blank">صفحه اینستاگرام</a>
+</section>
 
 <footer>
-
-    <p>
-        © 2026
-        <span>MOSCOW NIGHTS</span>
-        | تمامی حقوق محفوظ است.
-    </p>
-
-    <p>
-        شب‌های مسکو | صومعه‌سرا، گیلان
-    </p>
-
+ MOSCOW NIGHTS © 2026
+ <br>
+ شب‌های مسکو | صومعه‌سرا
 </footer>
 
 </body>
-    </html>
+</html>
