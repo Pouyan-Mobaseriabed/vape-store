@@ -33,17 +33,17 @@ a {
 }
 
 .container {
-    width: 90%;
-    max-width: 1100px;
+    width: 92%;
+    max-width: 1150px;
     margin: auto;
 }
 
 /* HEADER */
 
 header {
-    background: rgba(9,9,13,0.96);
-    border-bottom: 1px solid #292132;
-    padding: 15px 0;
+    background: #0c0a11;
+    border-bottom: 1px solid #30213e;
+    padding: 12px 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -59,77 +59,83 @@ header {
 .brand {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
 }
 
 .brand img {
-    width: 55px;
-    height: 55px;
+    width: 75px;
+    height: 75px;
     object-fit: contain;
 }
 
 .brand h1 {
     font-size: 19px;
-    color: #c6a6ff;
-    letter-spacing: 1px;
+    color: #d0adff;
+    direction: ltr;
 }
 
 nav {
     display: flex;
-    gap: 22px;
-    font-size: 13px;
+    gap: 24px;
+    font-size: 14px;
+}
+
+nav a {
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #b783ff;
+    color: #bd8cff;
 }
 
 /* HERO */
 
 .hero {
-    padding: 75px 0 65px;
     text-align: center;
+    padding: 85px 15px 75px;
     background:
-    radial-gradient(circle at 50% 20%, #28153e 0%, #100d18 38%, #09090d 75%);
+    radial-gradient(circle at center,
+    #28163d 0%,
+    #100d17 55%,
+    #09090d 85%);
 }
 
 .hero-logo {
-    width: 145px;
-    height: 145px;
+    width: 210px;
+    height: 210px;
     object-fit: contain;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 0 20px rgba(169,105,255,0.3));
+    margin-bottom: 25px;
+    filter: drop-shadow(0 0 22px rgba(169,105,255,0.25));
 }
 
 .hero h2 {
-    font-size: 38px;
-    color: #d5b9ff;
-    margin-bottom: 10px;
+    font-size: 40px;
+    color: #d7bdff;
 }
 
 .english-title {
-    font-size: 19px;
-    color: #b7b3c2;
-    letter-spacing: 4px;
     direction: ltr;
+    font-size: 21px;
+    letter-spacing: 5px;
+    color: #c2bdca;
 }
 
 .hero-line {
-    width: 90px;
+    width: 85px;
     height: 3px;
     background: #a75cff;
-    margin: 25px auto;
+    margin: 28px auto;
     border-radius: 10px;
 }
 
 .hero p {
-    color: #c6c2ce;
-    max-width: 650px;
+    max-width: 700px;
     margin: auto;
-    font-size: 15px;
+    color: #d0cbd8;
+    font-size: 16px;
 }
 
-/* GENERAL SECTIONS */
+/* SECTIONS */
 
 section {
     padding: 65px 0;
@@ -137,72 +143,47 @@ section {
 
 .section-title {
     text-align: center;
-    font-size: 25px;
+    font-size: 27px;
     color: #d2b1ff;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .section-title::after {
     content: "";
     display: block;
-    width: 55px;
+    width: 60px;
     height: 2px;
     background: #a75cff;
-    margin: 12px auto;
+    margin: 13px auto;
 }
 
 /* ABOUT */
 
 .about-box {
-    background: #121019;
-    border: 1px solid #30223e;
+    background: #14111b;
+    border: 1px solid #33243f;
     border-radius: 18px;
-    padding: 30px;
+    padding: 35px;
     text-align: center;
     color: #d0cbd8;
+    font-size: 15px;
 }
 
-/* GALLERY */
+/* MAIN IMAGE */
 
 .gallery {
-    background: #0d0b12;
+    background: #0e0b13;
 }
 
 .gallery-image {
-    width: 100%;
-    max-width: 850px;
     display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
     margin: auto;
-    border-radius: 18px;
+    border-radius: 20px;
     border: 1px solid #45305b;
-    box-shadow: 0 0 30px rgba(143,76,209,0.15);
-}
-
-/* IDENTITY */
-
-.identity-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 18px;
-}
-
-.identity-card {
-    background: #14111b;
-    border: 1px solid #33243f;
-    border-radius: 15px;
-    padding: 25px 15px;
-    text-align: center;
-}
-
-.identity-card h3 {
-    color: #c9a5ff;
-    margin-bottom: 8px;
-    font-size: 17px;
-}
-
-.identity-card p {
-    color: #bbb5c7;
-    font-size: 13px;
+    box-shadow: 0 0 30px rgba(143,76,209,0.2);
 }
 
 /* CONTACT */
@@ -212,21 +193,22 @@ section {
 }
 
 .contact-box {
-    max-width: 700px;
+    max-width: 750px;
     margin: auto;
     background: #171320;
     border: 1px solid #443052;
     border-radius: 18px;
-    padding: 30px;
+    padding: 35px;
 }
 
 .contact-row {
-    padding: 12px 5px;
+    padding: 14px 5px;
     border-bottom: 1px solid #30263a;
     color: #d2cbdc;
+    font-size: 15px;
 }
 
-.contact-row:last-child {
+.contact-row:last-of-type {
     border-bottom: none;
 }
 
@@ -236,12 +218,13 @@ section {
 
 .instagram {
     display: inline-block;
-    margin-top: 25px;
-    padding: 10px 25px;
+    margin-top: 28px;
+    padding: 12px 30px;
     background: #8d42d1;
     color: white;
-    border-radius: 8px;
+    border-radius: 9px;
     transition: 0.3s;
+    font-size: 14px;
 }
 
 .instagram:hover {
@@ -254,7 +237,7 @@ section {
     background: #171019;
     border-right: 4px solid #a75cff;
     border-radius: 10px;
-    padding: 22px;
+    padding: 25px;
     color: #d0c8d8;
     font-size: 13px;
 }
@@ -262,6 +245,7 @@ section {
 .health-notice h3 {
     color: #d6b7ff;
     margin-bottom: 10px;
+    font-size: 17px;
 }
 
 /* FOOTER */
@@ -270,13 +254,30 @@ footer {
     background: #07070a;
     border-top: 1px solid #30223e;
     text-align: center;
-    padding: 25px 10px;
+    padding: 28px 10px;
     color: #88818f;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 footer span {
     color: #bd91ff;
+}
+
+/* TABLET */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .gallery-image {
+        max-width: 100%;
+    }
+
+    nav {
+        gap: 15px;
+    }
 }
 
 /* MOBILE */
@@ -285,32 +286,63 @@ footer span {
 
     .header-content {
         flex-direction: column;
+        gap: 8px;
+    }
+
+    .brand img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .brand h1 {
+        font-size: 17px;
     }
 
     nav {
-        gap: 15px;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
         font-size: 12px;
+        padding: 5px 0;
     }
 
     .hero {
-        padding: 55px 0;
+        padding: 60px 15px;
+    }
+
+    .hero-logo {
+        width: 185px;
+        height: 185px;
     }
 
     .hero h2 {
-        font-size: 29px;
+        font-size: 32px;
     }
 
     .english-title {
-        font-size: 15px;
+        font-size: 16px;
+        letter-spacing: 4px;
+    }
+
+    .hero p {
+        font-size: 14px;
     }
 
     section {
         padding: 45px 0;
     }
 
+    .section-title {
+        font-size: 23px;
+    }
+
     .about-box,
     .contact-box {
-        padding: 20px;
+        padding: 22px;
+    }
+
+    .gallery-image {
+        border-radius: 12px;
     }
 }
 </style>
@@ -322,15 +354,17 @@ footer span {
     <div class="container header-content">
 
         <div class="brand">
-            <img src="file_00000000affc8210b919614509fa3f14.png"
-                 alt="لوگوی شب‌های مسکو">
+            <img
+                src="file_00000000affc8210b919614509fa3f14.png"
+                alt="لوگوی شب‌های مسکو">
+
             <h1>MOSCOW NIGHTS</h1>
         </div>
 
         <nav>
             <a href="#home">خانه</a>
             <a href="#about">درباره ما</a>
-            <a href="#gallery">گالری</a>
+            <a href="#gallery">تصویر مجموعه</a>
             <a href="#contact">ارتباط</a>
         </nav>
 
@@ -339,13 +373,16 @@ footer span {
 
 <main>
 
+<!-- HOME -->
+
 <section class="hero" id="home">
 
     <div class="container">
 
-        <img class="hero-logo"
-             src="file_00000000affc8210b919614509fa3f14.png"
-             alt="نشان مجموعه شب‌های مسکو">
+        <img
+            class="hero-logo"
+            src="file_00000000affc8210b919614509fa3f14.png"
+            alt="نشان شب‌های مسکو">
 
         <h2>شب‌های مسکو</h2>
 
@@ -356,32 +393,33 @@ footer span {
         <div class="hero-line"></div>
 
         <p>
-            فضایی با هویت بصری متفاوت، ترکیبی از مشکی مات،
-            بنفش الکتریکی و نقره‌ای؛
-            با رویکردی مدرن و مینیمال در صومعه‌سرای گیلان.
+            فضایی با هویتی متفاوت و نگاهی مدرن،
+            در صومعه‌سرای گیلان.
         </p>
 
     </div>
 
 </section>
 
+<!-- ABOUT -->
+
 <section id="about">
 
     <div class="container">
 
-        <h2 class="section-title">درباره شب‌های مسکو</h2>
+        <h2 class="section-title">درباره ما</h2>
 
         <div class="about-box">
 
             <p>
-                شب‌های مسکو یک نام و هویت مستقل با طراحی بصری
-                الهام‌گرفته از فضای شبانه، نورهای بنفش و ترکیب
-                رنگ‌های تیره و متالیک است.
+                شب‌های مسکو نام مجموعه‌ای با هویتی مستقل
+                و رویکردی مدرن است.
             </p>
 
             <p>
-                هدف این مجموعه ایجاد یک هویت منسجم، ساده و
-                قابل تشخیص در فضای دیجیتال و ارتباطات عمومی است.
+                این مجموعه در صومعه‌سرای استان گیلان قرار دارد
+                و این وب‌سایت برای معرفی مجموعه و ارائه
+                اطلاعات عمومی و ارتباطی آن ایجاد شده است.
             </p>
 
         </div>
@@ -389,60 +427,31 @@ footer span {
     </div>
 
 </section>
+
+<!-- GALLERY -->
 
 <section class="gallery" id="gallery">
 
     <div class="container">
 
-        <h2 class="section-title">هویت بصری مجموعه</h2>
+        <h2 class="section-title">تصویر مجموعه</h2>
 
-        <img class="gallery-image"
-             src="file_00000000525c8210acbedb1dcaef1ce5.png"
-             alt="طرح هویت بصری شب‌های مسکو">
-
-    </div>
-
-</section>
-
-<section>
-
-    <div class="container">
-
-        <h2 class="section-title">مشخصات هویتی</h2>
-
-        <div class="identity-grid">
-
-            <div class="identity-card">
-                <h3>رنگ اصلی</h3>
-                <p>مشکی مات</p>
-            </div>
-
-            <div class="identity-card">
-                <h3>رنگ مکمل</h3>
-                <p>بنفش الکتریکی</p>
-            </div>
-
-            <div class="identity-card">
-                <h3>جزئیات بصری</h3>
-                <p>نقره‌ای متالیک</p>
-            </div>
-
-            <div class="identity-card">
-                <h3>موقعیت</h3>
-                <p>صومعه‌سرا، استان گیلان</p>
-            </div>
-
-        </div>
+        <img
+            class="gallery-image"
+            src="file_00000000525c8210acbedb1dcaef1ce5.png"
+            alt="تصویر مجموعه شب‌های مسکو">
 
     </div>
 
 </section>
+
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
 
     <div class="container">
 
-        <h2 class="section-title">اطلاعات ارتباطی</h2>
+        <h2 class="section-title">ارتباط با ما</h2>
 
         <div class="contact-box">
 
@@ -468,10 +477,11 @@ footer span {
 
             <div style="text-align:center;">
 
-                <a class="instagram"
-                   href="https://www.instagram.com/moscownights.gilan/"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                <a
+                    class="instagram"
+                    href="https://www.instagram.com/moscownights.gilan/"
+                    target="_blank"
+                    rel="noopener noreferrer">
 
                     صفحه اینستاگرام مجموعه
 
@@ -485,6 +495,8 @@ footer span {
 
 </section>
 
+<!-- HEALTH INFORMATION -->
+
 <section>
 
     <div class="container">
@@ -494,12 +506,10 @@ footer span {
             <h3>اطلاعیه سلامت</h3>
 
             <p>
-                محصولات حاوی نیکوتین اعتیادآور هستند و استفاده
-                از آن‌ها می‌تواند برای سلامت زیان‌آور باشد.
+                محصولات حاوی نیکوتین اعتیادآور هستند و
+                مصرف آن‌ها می‌تواند برای سلامت زیان‌آور باشد.
                 افراد غیرمصرف‌کننده و افراد زیر سن قانونی
                 نباید از این محصولات استفاده کنند.
-                این وب‌سایت صرفاً با هدف معرفی هویت مجموعه
-                و ارائه اطلاعات عمومی ایجاد شده است.
             </p>
 
         </div>
@@ -509,6 +519,8 @@ footer span {
 </section>
 
 </main>
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -525,4 +537,4 @@ footer span {
 </footer>
 
 </body>
-  </html>
+    </html>
